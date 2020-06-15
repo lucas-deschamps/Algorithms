@@ -21,7 +21,7 @@ function bubbleSort(arr: number[]): number[] {
   return arr;
 }
 
-// favoring modern syntax
+// favoring modern, TS (& JS) specific syntax
 
 const bubbleSortAlt = (arr: number[]): number[] => {
   let noSwaps: boolean;
