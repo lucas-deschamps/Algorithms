@@ -1,7 +1,7 @@
 // linear search algorithm; just my little implementation of indexOf using TypeScript
 const myIndex = <T>(arr: T[], value: T): number => {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] == value) return i;
+  for (let i: number = 0; i < arr.length; i++) {
+    if (arr[i] === value) return i;
   };
   return -1;
 };
