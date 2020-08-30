@@ -1,4 +1,4 @@
-// helper function
+// helper function expression
 
 const merge = (arr1: number[], arr2: number[]): number[] => {
   let results: number[] = [];
@@ -28,7 +28,7 @@ const merge = (arr1: number[], arr2: number[]): number[] => {
   return results;
 };
 
-// merge sort function
+// merge sort function expression
 
 const mergeSort = (arr: number[]): number[] => {
   if (arr.length <= 1) return arr;
