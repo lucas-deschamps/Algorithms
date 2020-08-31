@@ -5,7 +5,7 @@ const pivot = (arr: number[], start: number = 0, end: number = arr.length - 1): 
     [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
   };
   // assumption that the pivot is always the first element
-  let pivot: number = arr[start];
+  const pivot: number = arr[start];
   let swapIdx: number = start;
 
   for (let i: number = start + 1; i <= end; i++) {
