@@ -1,7 +1,7 @@
 // helper function expression
 
 const merge = (arr1: number[], arr2: number[]): number[] => {
-  let results: number[] = [];
+  const results: number[] = [];
   let i: number = 0;
   let j: number = 0;
 
@@ -33,9 +33,9 @@ const merge = (arr1: number[], arr2: number[]): number[] => {
 const mergeSort = (arr: number[]): number[] => {
   if (arr.length <= 1) return arr;
 
-  let mid: number = Math.floor(arr.length / 2);
-  let left: number[] = mergeSort(arr.slice(0, mid));
-  let right: number[] = mergeSort(arr.slice(mid));
+  const mid: number = Math.floor(arr.length / 2);
+  const left: number[] = mergeSort(arr.slice(0, mid));
+  const right: number[] = mergeSort(arr.slice(mid));
 
   return merge(left, right);
 };
