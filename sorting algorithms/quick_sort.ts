@@ -24,7 +24,7 @@ const pivot = (arr: number[], start: number = 0, end: number = arr.length - 1): 
 
 const quickSort = (arr: number[], left: number = 0, right: number = arr.length -1): number[] => {
   if (left < right) {
-    let pivotIndex: number = pivot(arr, left, right);
+    const pivotIndex: number = pivot(arr, left, right);
     quickSort(arr, left, pivotIndex - 1);
     quickSort(arr, pivotIndex + 1, right);
   };
@@ -33,3 +33,4 @@ const quickSort = (arr: number[], left: number = 0, right: number = arr.length -
 };
            
 console.log(quickSort([100, -3, 2, 4, 6, 9, 1, 2, 5, 3, 24, 7, 10]));
+
