@@ -9,7 +9,7 @@ const naiveSearch = (long: string, pattern: string): number => {
   
   for (let i: number = 0; i < long.length; i++) {
     for (let j: number = 0; j < pattern.length; j++) {
-      if (pattern[j] !== long[i+j]) break;
+      if (pattern[j] !== long[i + j]) break;
       if (j === pattern.length - 1) count++;
     };
   };

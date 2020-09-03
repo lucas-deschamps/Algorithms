@@ -22,7 +22,7 @@ const insertionSortAlt = (arr: number[]): number[] => {
   for (let i: number = 1; i < arr.length; i++) {
     let j: number = i;
 
-    while (j > 0 && arr[j-1] > arr[j]) {
+    while (j > 0 && arr[j - 1] > arr[j]) {
       swap(arr, j, j - 1);
       j--;
     };
