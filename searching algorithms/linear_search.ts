@@ -1,9 +1,9 @@
 type SearchTypes = string | boolean | number;
 
 const myIndex = <T extends SearchTypes>(arr: T[], value: T): number => {
-  for (let i: number = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; ++i)
     if (arr[i] === value) return i;
-  };
+
   return -1;
 };
 
